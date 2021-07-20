@@ -20,7 +20,7 @@ public class Conexao {
   			  Class.forName("com.mysql.cj.jdbc.Driver");
 			  for (int i = 0; i < 10; i++){
 				conexoes[i] = DriverManager.getConnection(
-						"jdbc:mysql://localhost/associacao?useSSL=false", "root", "0164");
+						"jdbc:mysql://localhost/associacao?useSSL=false", "root", "{yourPassword}");
 			  }
 			} catch (Exception e) {
 				e.printStackTrace(System.out);
